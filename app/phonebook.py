@@ -1,11 +1,28 @@
 class Contact (object):
-	"""docstring for Contact """
-	def __init__(self, name,number):
-		self.name =name
-		self.number=number
+	"""docstring foContact """
+	def __init__(self):
+		self.contact_list=[]
+# class variable
+	def add(self,name,number):
+		self.newcontact={}
+		self.newcontact[name]=number
+		self.contact_list.append(self.newcontact)
+		return self.newcontact
 
-contactone=Contact(liz,456469879)
-print (contactone.name)
-.
+	def view():
+		self.contact_list
+
+		pass
+
+	def delete(self,name ):
+		if name in self.contact_list:
+			del self.contact_list[name]
+			return self.contact_list()
+
+
+
+	
+
+
 
 
