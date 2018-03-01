@@ -1,4 +1,1 @@
-{
-  "test/test_phonebook.py::TestPhonebook": true,
-  "test/test_phonebook.py::TestPhonebook::test_delete_method_deletes_duplicates": true
-}
+{}

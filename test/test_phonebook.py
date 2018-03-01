@@ -8,12 +8,15 @@ class TestPhonebook(unittest.TestCase):
 	def test_add_method_adds_contact(self):
 		bens_phonebook = Contact()
 		bens_phonebook.add("naibor","0707981133")
-		self.assertEqual(bens_phonebook.contact_list[0]['naibor'],"0707981133" )
+		self.assertEqual(bens_phonebook.contact_list['naibor'],"0707981133" )
 
 	def test_delete_method_deletes_duplicates(self):
 		naibor_phonebook = Contact()
-		naibor_phonebook.delete("naibor","0707981133")
-		self.assertNotIn(naibor_phonebook.contact_list )
+		naibor_phonebook.delete("naibor")
+		self.assertNotIn('naibor', naibor_phonebook.contact_list  )
+
+	def test_delete_method_deletes_contact(self):
+		pass
 
 
 
